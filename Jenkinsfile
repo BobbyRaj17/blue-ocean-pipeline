@@ -1,11 +1,11 @@
 pipeline {
   agent {
-        docker { image 'node:7-alpine' }
+        label "ubuntu-1604"
     }
     stages {
         stage('Test') {
             steps {
-                sh 'node --version'
+                sh 'whoami'
             }
         }
     }
