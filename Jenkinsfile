@@ -3,7 +3,7 @@ pipeline {
   stages {
       stage('Test') {
           steps {
-              sh 'whoami'
+              sh 'docker inspect -f . node:7-alpine'
           }
       }
   }
